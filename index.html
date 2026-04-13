@@ -49,14 +49,19 @@
         <p>B/.12.00</p>
 
         <p>Acompañamiento:</p>
-        <input type="radio" name="acom1"> Patacones
-        <input type="radio" name="acom1"> Arroz con coco
-        <input type="radio" name="acom1"> Papas
+        <input type="radio" id="ceviche_patacones" name="acom_ceviche">
+        <label for="ceviche_patacones">Patacones</label>
 
-        <br>
+        <input type="radio" id="ceviche_arroz" name="acom_ceviche">
+        <label for="ceviche_arroz">Arroz con coco</label>
 
-        <label>Cantidad de platos:</label>
-        <input type="number" min="1">
+        <input type="radio" id="ceviche_papas" name="acom_ceviche">
+        <label for="ceviche_papas">Papas</label>
+
+        <br><br>
+
+        <label for="cantidad_ceviche">Cantidad de platos:</label>
+        <input type="number" id="cantidad_ceviche" name="cantidad_ceviche" min="1">
 
         <button>Pedir</button>
     </article>
@@ -66,14 +71,19 @@
         <p>B/.15.00</p>
 
         <p>Acompañamiento:</p>
-        <input type="radio" name="acom2"> Patacones
-        <input type="radio" name="acom2"> Arroz con coco
-        <input type="radio" name="acom2"> Papas
+        <input type="radio" id="pescado_patacones" name="acom_pescado">
+        <label for="pescado_patacones">Patacones</label>
 
-        <br>
+        <input type="radio" id="pescado_arroz" name="acom_pescado">
+        <label for="pescado_arroz">Arroz con coco</label>
 
-        <label>Cantidad de platos:</label>
-        <input type="number" min="1">
+        <input type="radio" id="pescado_papas" name="acom_pescado">
+        <label for="pescado_papas">Papas</label>
+
+        <br><br>
+
+        <label for="cantidad_pescado">Cantidad de platos:</label>
+        <input type="number" id="cantidad_pescado" name="cantidad_pescado" min="1">
 
         <button>Pedir</button>
     </article>
@@ -83,20 +93,24 @@
         <p>B/.18.00</p>
 
         <p>Acompañamiento:</p>
-        <input type="radio" name="acom3"> Patacones
-        <input type="radio" name="acom3"> Arroz con coco
-        <input type="radio" name="acom3"> Papas
+        <input type="radio" id="camarones_patacones" name="acom_camarones">
+        <label for="camarones_patacones">Patacones</label>
 
-        <br>
+        <input type="radio" id="camarones_arroz" name="acom_camarones">
+        <label for="camarones_arroz">Arroz con coco</label>
 
-        <label>Cantidad de platos:</label>
-        <input type="number" min="1">
+        <input type="radio" id="camarones_papas" name="acom_camarones">
+        <label for="camarones_papas">Papas</label>
+
+        <br><br>
+
+        <label for="cantidad_camarones">Cantidad de platos:</label>
+        <input type="number" id="cantidad_camarones" name="cantidad_camarones" min="1">
 
         <button>Pedir</button>
     </article>
 
     <button>Enviar pedido</button>
-
 </section>
 
 <!-- TOURS -->
@@ -106,11 +120,11 @@
     <article>
         <h3>Paseo en lancha</h3>
 
-        <label>Fecha:</label>
-        <input type="date"><br><br>
+        <label for="fecha_lancha">Fecha:</label>
+        <input type="date" id="fecha_lancha" name="fecha_lancha"><br><br>
 
-        <label>Cantidad de personas:</label>
-        <input type="number" min="1"><br><br>
+        <label for="personas_lancha">Cantidad de personas:</label>
+        <input type="number" id="personas_lancha" name="personas_lancha" min="1"><br><br>
 
         <button>Reservar</button>
     </article>
@@ -118,11 +132,11 @@
     <article>
         <h3>Jetski</h3>
 
-        <label>Fecha:</label>
-        <input type="date"><br><br>
+        <label for="fecha_jetski">Fecha:</label>
+        <input type="date" id="fecha_jetski" name="fecha_jetski"><br><br>
 
-        <label>Cantidad de personas:</label>
-        <input type="number" min="1"><br><br>
+        <label for="personas_jetski">Cantidad de personas:</label>
+        <input type="number" id="personas_jetski" name="personas_jetski" min="1"><br><br>
 
         <button>Reservar</button>
     </article>
@@ -130,11 +144,11 @@
     <article>
         <h3>El Crucero</h3>
 
-        <label>Fecha:</label>
-        <input type="date"><br><br>
+        <label for="fecha_crucero">Fecha:</label>
+        <input type="date" id="fecha_crucero" name="fecha_crucero"><br><br>
 
-        <label>Cantidad de personas:</label>
-        <input type="number" min="1"><br><br>
+        <label for="personas_crucero">Cantidad de personas:</label>
+        <input type="number" id="personas_crucero" name="personas_crucero" min="1"><br><br>
 
         <button>Reservar</button>
     </article>
@@ -149,22 +163,30 @@
     <form>
 
         <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre"><br><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
 
         <label for="telefono">Teléfono:</label><br>
-        <input type="text" id="telefono"><br><br>
+        <input type="text" id="telefono" name="telefono"><br><br>
 
         <label for="fecha_reserva">Fecha:</label><br>
-        <input type="date" id="fecha_reserva"><br><br>
+        <input type="date" id="fecha_reserva" name="fecha_reserva"><br><br>
 
         <label>Servicio:</label><br>
-        <input type="radio" name="servicio"> Restaurante
-        <input type="radio" name="servicio"> Tours<br><br>
+        <input type="radio" id="serv_restaurante" name="servicio">
+        <label for="serv_restaurante">Restaurante</label>
+
+        <input type="radio" id="serv_tours" name="servicio">
+        <label for="serv_tours">Tours</label><br><br>
 
         <label>Método de pago:</label><br>
-        <input type="radio" name="pago"> Yappy
-        <input type="radio" name="pago"> Efectivo
-        <input type="radio" name="pago"> Cuenta bancaria<br><br>
+        <input type="radio" id="pago_yappy" name="pago">
+        <label for="pago_yappy">Yappy</label>
+
+        <input type="radio" id="pago_efectivo" name="pago">
+        <label for="pago_efectivo">Efectivo</label>
+
+        <input type="radio" id="pago_banco" name="pago">
+        <label for="pago_banco">Cuenta bancaria</label><br><br>
 
         <button type="submit">Enviar</button>
 
@@ -188,7 +210,6 @@
 
     <h3>WhatsApp</h3>
     <p>6243-4313</p>
-
 </section>
 
 </main>
