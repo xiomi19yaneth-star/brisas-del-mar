@@ -20,149 +20,176 @@
 
 <main>
 
-    <!-- INICIO -->
-    <section id="inicio">
-        <h2>Inicio</h2>
+<!-- INICIO -->
+<section id="inicio">
+    <h2>Inicio</h2>
 
-        <img src="imagen.jpg" alt="Vista del restaurante Brisas del Mar en la playa">
+    <img src="imagen.jpg" alt="Fonda Brisas del Mar en la playa">
 
-        <p>Disfruta del mar, comida y aventura</p>
-        <button>Reservar ahora</button>
-    </section>
+    <p>Disfruta del mar, comida y aventura</p>
 
-    <!-- MENÚ -->
-    <section id="menu">
-        <h2>Menú</h2>
+    <h3>¿Quiénes somos?</h3>
+    <p>Somos Brisas del Mar, una fonda caribeña ubicada en Isla Grande, Colón, dedicada a ofrecer comida típica del mar y experiencias turísticas como paseos en lancha, jetski y recorridos alrededor de la isla.</p>
 
-        <article>
-            <h3>Ceviche</h3>
-            <p>Precio: B/.12.00</p>
-            <button>Pedir</button>
-        </article>
+    <h3>Misión</h3>
+    <p>Brindar a nuestros clientes comida caribeña fresca y deliciosa junto con servicios turísticos, ofreciendo atención cálida y de calidad.</p>
 
-        <article>
-            <h3>Pescado frito</h3>
-            <p>Precio: B/.15.00</p>
-            <button>Pedir</button>
-        </article>
+    <h3>Visión</h3>
+    <p>Ser una fonda reconocida en Isla Grande por la calidad de nuestros servicios y la satisfacción de nuestros clientes.</p>
 
-        <article>
-            <h3>Piña colada</h3>
-            <p>Precio: B/.6.00</p>
-            <button>Pedir</button>
-        </article>
+    <button>Reservar ahora</button>
+</section>
 
-        <article>
-            <h3>Ropa a la Macho</h3>
-            <p>Precio: B/.20.00</p>
-            <button>Pedir</button>
-        </article>
+<!-- MENÚ -->
+<section id="menu">
+    <h2>Menú</h2>
 
-        <article>
-            <h3>Filete de pollo</h3>
-            <p>Precio: B/.10.00</p>
-            <button>Pedir</button>
-        </article>
+    <article>
+        <h3>Ceviche</h3>
+        <p>B/.12.00</p>
 
-        <article>
-            <h3>Camarones al ajillo</h3>
-            <p>Precio: B/.18.00</p>
-            <button>Pedir</button>
-        </article>
+        <p>Acompañamiento:</p>
+        <input type="radio" name="acom1"> Patacones
+        <input type="radio" name="acom1"> Arroz con coco
+        <input type="radio" name="acom1"> Papas
 
-        <article>
-            <h3>Baby lobster</h3>
-            <p>Precio: B/.25.00</p>
-            <button>Pedir</button>
-        </article>
+        <br>
 
-    </section>
+        <label>Cantidad de platos:</label>
+        <input type="number" min="1">
 
-    <!-- TOURS -->
-    <section id="tours">
-        <h2>Tours</h2>
+        <button>Pedir</button>
+    </article>
 
-        <article>
-            <h3>Paseo tour en lancha</h3>
-            <p>Recorrido por el mar.</p>
-            <button>Reservar</button>
-        </article>
+    <article>
+        <h3>Pescado frito</h3>
+        <p>B/.15.00</p>
 
-        <article>
-            <h3>Jetski</h3>
-            <p>Actividad acuática.</p>
-            <button>Reservar</button>
-        </article>
+        <p>Acompañamiento:</p>
+        <input type="radio" name="acom2"> Patacones
+        <input type="radio" name="acom2"> Arroz con coco
+        <input type="radio" name="acom2"> Papas
 
-        <article>
-            <h3>El Crucero</h3>
-            <p>Paseo alrededor de la isla.</p>
-            <button>Reservar</button>
-        </article>
+        <br>
 
-    </section>
+        <label>Cantidad de platos:</label>
+        <input type="number" min="1">
 
-    <!-- RESERVAS -->
-    <section id="reservas">
-        <h2>Reservas</h2>
+        <button>Pedir</button>
+    </article>
 
-        <form>
+    <article>
+        <h3>Camarones al ajillo</h3>
+        <p>B/.18.00</p>
 
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
+        <p>Acompañamiento:</p>
+        <input type="radio" name="acom3"> Patacones
+        <input type="radio" name="acom3"> Arroz con coco
+        <input type="radio" name="acom3"> Papas
 
-            <label for="telefono">Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono"><br><br>
+        <br>
 
-            <label for="fecha">Fecha:</label><br>
-            <input type="date" id="fecha" name="fecha"><br><br>
+        <label>Cantidad de platos:</label>
+        <input type="number" min="1">
 
-            <p>Servicio:</p>
+        <button>Pedir</button>
+    </article>
 
-            <input type="radio" id="restaurante" name="servicio" value="restaurante">
-            <label for="restaurante">Restaurante</label><br>
+    <button>Enviar pedido</button>
 
-            <input type="radio" id="tours_servicio" name="servicio" value="tours">
-            <label for="tours_servicio">Tours</label><br><br>
+</section>
 
-            <p>Método de pago:</p>
+<!-- TOURS -->
+<section id="tours">
+    <h2>Tours</h2>
 
-            <input type="radio" id="yappy" name="pago" value="yappy">
-            <label for="yappy">Yappy</label><br>
+    <article>
+        <h3>Paseo en lancha</h3>
 
-            <input type="radio" id="efectivo" name="pago" value="efectivo">
-            <label for="efectivo">Efectivo</label><br>
+        <label>Fecha:</label>
+        <input type="date"><br><br>
 
-            <input type="radio" id="banco" name="pago" value="banco">
-            <label for="banco">Cuenta bancaria</label><br><br>
+        <label>Cantidad de personas:</label>
+        <input type="number" min="1"><br><br>
 
-            <button type="submit">Enviar</button>
+        <button>Reservar</button>
+    </article>
 
-        </form>
-    </section>
+    <article>
+        <h3>Jetski</h3>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
+        <label>Fecha:</label>
+        <input type="date"><br><br>
 
-        <p>Ubicación: Isla Grande, Colón</p>
+        <label>Cantidad de personas:</label>
+        <input type="number" min="1"><br><br>
 
-        <h3>Mapa</h3>
-        <p>[Mapa de ubicación]</p>
+        <button>Reservar</button>
+    </article>
 
-        <h3>Síguenos</h3>
-        <ul>
-            <li>Instagram: brisas_delmar</li>
-            <li>Instagram: delmar_vista</li>
-            <li>Instagram: aventuras_isla</li>
-        </ul>
+    <article>
+        <h3>El Crucero</h3>
 
-        <h3>Teléfono</h3>
-        <p>6245-7765 / 6243-2113</p>
+        <label>Fecha:</label>
+        <input type="date"><br><br>
 
-        <h3>WhatsApp</h3>
-        <p>6245-7765 / 6243-2113</p>
-    </section>
+        <label>Cantidad de personas:</label>
+        <input type="number" min="1"><br><br>
+
+        <button>Reservar</button>
+    </article>
+
+    <button>Enviar</button>
+</section>
+
+<!-- RESERVAS -->
+<section id="reservas">
+    <h2>Reservas</h2>
+
+    <form>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre"><br><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="text" id="telefono"><br><br>
+
+        <label for="fecha_reserva">Fecha:</label><br>
+        <input type="date" id="fecha_reserva"><br><br>
+
+        <label>Servicio:</label><br>
+        <input type="radio" name="servicio"> Restaurante
+        <input type="radio" name="servicio"> Tours<br><br>
+
+        <label>Método de pago:</label><br>
+        <input type="radio" name="pago"> Yappy
+        <input type="radio" name="pago"> Efectivo
+        <input type="radio" name="pago"> Cuenta bancaria<br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <p>Ubicación: Isla Grande, Colón</p>
+
+    <h3>Mapa</h3>
+    <p>[Mapa de ubicación]</p>
+
+    <h3>Síguenos</h3>
+    <p>Instagram: @brisas_delmar</p>
+
+    <h3>Teléfono</h3>
+    <p>6245-7786</p>
+
+    <h3>WhatsApp</h3>
+    <p>6243-4313</p>
+
+</section>
 
 </main>
 
